@@ -17,5 +17,5 @@
     }
     let id = window.location.pathname.split('/')[2];
     let rank = getItem(list,"id",id).rank;
-    $("#ChartWarpper > div > small").before(`Scientific Ranked${rank} `);
+    $("#ChartWarpper > div > small").before(`Scientific Ranked:${rank} `);
 })();
