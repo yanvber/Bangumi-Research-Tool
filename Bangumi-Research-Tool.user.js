@@ -16,6 +16,8 @@
             return arr[i];
     }
     let id = window.location.pathname.split('/')[2];
-    let rank = getItem(list,"id",id).rank;
+    let info = getItem(list,"id",id);
+    if (info == undefined) return;
+    let rank = info.rank;
     $("#ChartWarpper > div > small").before(`Scientific Ranked:#${rank} `);
 })();
