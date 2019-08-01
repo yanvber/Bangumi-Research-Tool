@@ -19,5 +19,5 @@
     let info = getItem(list,"id",id);
     if (info == undefined) return;
     let rank = info.rank;
-    $("#ChartWarpper > div > small").before(`Scientific Ranked:#${rank} `);
+    $(".global_score > div").after(`<div><small class="grey">Ikely Scientific Ranked:</small><small class="alarm">#${rank}</small></div> `);
 })();
